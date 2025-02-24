@@ -1,0 +1,16 @@
+<div class="container-book-list">
+  @for ( book of book$ | async; track $index) {
+    <div class="book-item">
+      <img [src]="book.cover" alt="">
+      <div class="book-item-right">
+        <div class="title">
+        <h2>{{book.title}}</h2>
+        <p>Author: J.K.Rowling</p>
+        <p>Release Date: {{book.releaseDate}}</p>
+        </div>
+        <button mat-flat-button>See more</button>
+      </div>
+    </div>
+  }
+</div>
+
