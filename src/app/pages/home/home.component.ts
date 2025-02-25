@@ -8,12 +8,14 @@ import {AsyncPipe} from '@angular/common';
 
 import * as BookActions from '../../ngrx/book/actions';
 import {MatButton} from '@angular/material/button';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-home',
   imports: [
     AsyncPipe,
-    MatButton
+    MatButton,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

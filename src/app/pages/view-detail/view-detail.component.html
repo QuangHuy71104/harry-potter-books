@@ -1,1 +1,14 @@
 
+<div class="detail-container" *ngIf="selectedBook">
+  <div class="book-detail">
+    <img [src]="selectedBook.cover" alt="Book Cover">
+    <div class="book-info">
+      <h2>{{ selectedBook.title }} (Part {{selectedBook.number}})</h2>
+      <p><strong>Author:</strong> J.K. Rowling</p>
+      <p><strong>Release Date:</strong> {{ selectedBook.releaseDate }}</p>
+      <p><strong>Pages:</strong> {{ selectedBook.pages}}</p>
+      <p><strong>Description:</strong> {{ selectedBook.description }}</p>
+    </div>
+  </div>
+</div>
+
